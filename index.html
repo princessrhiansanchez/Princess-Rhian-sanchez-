@@ -6,139 +6,119 @@
 
     <title>My Portfolio</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-sans bg-pink-50 text-pink-950">
+<body>
 
-    <!-- Navigation -->
-    <header class="bg-pink-600 sticky top-0 z-50">
+    
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
 
-        <nav class="max-w-6xl mx-auto p-5 flex flex-col md:flex-row
-                    justify-between items-center gap-4">
-
-            <h2 class="text-2xl font-bold text-white">
-                My Portfolio
-            </h2>
-
-            <ul class="list-none flex flex-wrap justify-center gap-5">
-
-                <li>
-                    <a href="#home"
-                       class="text-white font-bold hover:text-pink-200">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about"
-                       class="text-white font-bold hover:text-pink-200">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#skills"
-                       class="text-white font-bold hover:text-pink-200">
-                        Skills
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects"
-                       class="text-white font-bold hover:text-pink-200">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact"
-                       class="text-white font-bold hover:text-pink-200">
-                        Contact
-                    </a>
-                </li>
-
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
+  
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p>Hello, I'm</p>
+            <h1>Princess Rhian</h1>
+            <h3>Student & Future Web Developer</h3>
 
-    <!-- Home -->
-    <section id="home"
-        class="min-h-[90vh] flex items-center justify-center
-               text-center px-5 py-10
-               bg-gradient-to-br from-pink-200 to-pink-50">
-
-        <div class="max-w-3xl">
-
-            <p class="text-pink-600 text-xl">
-                Hello, I'm
-            </p>
-
-            <h1 class="text-5xl md:text-6xl font-bold
-                       text-pink-700 my-3">
-                Princess Rhian
-            </h1>
-
-            <h3 class="text-xl md:text-2xl font-semibold mb-5">
-                Student & Future Web Developer
-            </h3>
-
-            <p class="leading-7">
+            <p>
                 Welcome to my personal portfolio.
                 This website shows my skills, projects, and interests.
             </p>
 
-            <a href="#about"
-               class="inline-block mt-6 px-6 py-3
-                      bg-pink-600 text-white font-bold
-                      rounded-full hover:bg-pink-800 transition">
-
-                Learn More
-
-            </a>
-
+            <a href="#about" class="button">Learn More</a>
         </div>
-
     </section>
 
+    
+    <section id="about">
+        <h2>About Me</h2>
 
-    <!-- About -->
-    <section id="about" class="py-20 px-5 text-center">
-
-        <h2 class="text-4xl font-bold text-pink-700 mb-8">
-            About Me
-        </h2>
-
-        <div class="max-w-2xl mx-auto bg-white p-8
-                    rounded-2xl shadow-lg">
-
-            <p class="leading-8">
+        <div class="about-box">
+            <p>
                 Hello! I'm a student who is learning about web development.
                 I enjoy creating websites and learning new things about
                 HTML, CSS, and programming.
             </p>
-
         </div>
-
     </section>
 
+    
+    <section id="skills">
+        <h2>My Skills</h2>
 
-    <!-- Skills -->
-    <section id="skills"
-        class="py-20 px-5 text-center bg-pink-100">
+        <div class="cards">
 
-        <h2 class="text-4xl font-bold text-pink-700 mb-10">
-            My Skills
-        </h2>
+            <div class="card">
+                <h3>HTML</h3>
+                <p>I can create the structure of a website using HTML.</p>
+            </div>
 
-        <div class="max-w-5xl mx-auto
-                    flex flex-wrap justify-center gap-6">
+            <div class="card">
+                <h3>CSS</h3>
+                <p>I can design websites using colors, layouts, and styling.</p>
+            </div>
 
-            <div class="bg-white w-[280px] p-8
-                        rounded-2xl shadow-lg
-                        hover:-translate-y-2 transition">
+            <div class="card">
+                <h3>Programming</h3>
+                <p>I am learning programming and improving my coding skills.</p>
+            </div>
 
-                <h3 class
+        </div>
+    </section>
+
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3> First Website</h3>
+                <p>A simple website created using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Princess Website</h3>
+                <p>A creative website with a princess-inspired design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio</h3>
+                <p>My personal portfolio website.</p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: princesrhiansanchez505@gmail.com</p>
+
+        <a href="mailto:princesrhiansanchez505@gmail.com" class="button">
+            Send Me a Message
+        </a>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Princess Rhian | My Portfolio </p>
+    </footer>
+
+</body>
+</html>
